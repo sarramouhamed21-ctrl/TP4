@@ -1,0 +1,44 @@
+
+body {
+font-family: Arial, sans-serif;
+background-color: #eeeeee;
+margin: 0;
+}
+.container {
+    width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+h1 {
+    color: rgb(42, 11, 146);
+    text-align: left;
+}
+label {
+    display: block;
+    margin-top: 15px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+}
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#resultat {
+    font-weight: bold;
+}
+@media(max-width:480px){
+    container{
+        width:95%;
+        margin:20 auto;
+        padding 15px
+    }
+}

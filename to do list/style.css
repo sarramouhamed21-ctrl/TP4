@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #303030;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+    border:#111 solid 1px;
+
+}
+
+.todo-container {
+    width: 90%;
+    max-width: 720px;
+    min-height: 450px;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.todo-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.input-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 18px;
+    border: none;
+    outline: none;
+    background: #e9edf3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#addBtn {
+    padding: 0 35px;
+    border: none;
+    border-radius: 6px;
+    background: #5caf4b;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background: #49983b;
+}
+
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    .todo-container {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    #addBtn {
+        padding: 0 20px;
+    }
+}
+.task-text {flex: 1;
+overflow-wrap: anywhere;}
+.task-check {width: 24px;
+height: 24px;
+border: 2px solid #aaa;
+border-radius: 50%;
+cursor: pointer;
+flex-shrink: 0;}
+.completed .task-check {background: #5caf4b;
+border-color: #5caf4b;}
+.completed .task-check::after {content: "\2713";
+display: block;
+color: white;
+text-align: center;
+line-height: 20px;
+font-weight: bold;}
+.completed .task-text {text-decoration: line-through;
+color: #555;}
+.delete-btn {border: none;
+background: transparent;
+color: black;
+font-size: 27px;
+cursor: pointer;
+padding: 0 5px;}
+.delete-btn:hover {color: red;}
